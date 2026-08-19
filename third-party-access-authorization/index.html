@@ -10,6 +10,7 @@
 <style>
 .field{border-bottom:1px solid var(--ink);display:inline-block;min-width:220px;height:1.2em;vertical-align:bottom}
 .field.short{min-width:110px}.field.wide{min-width:100%;margin-top:4px}
+.field.wide+.field.wide{margin-top:14px}
 .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin:10px 0 18px}
 .fgrid .full{grid-column:1/-1}
 .fgrid label{font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:600;color:var(--ink-soft);display:block}
@@ -19,7 +20,27 @@
 .sigblock .fgrid{margin-bottom:6px}
 .returnbox{border:1.5px solid var(--boom);border-radius:8px;background:var(--banner);padding:14px 18px;margin:22px 0;font-size:15px}
 @media (max-width:640px){.fgrid{grid-template-columns:1fr}}
-@media print{.field{min-width:200px}.returnbox{border-color:#333;background:none}}
+
+/* Print / PDF layout. WeasyPrint (which builds the /pdf/ copies) does not lay
+   out CSS grid reliably, so in print media the form drops to a single-column,
+   hand-writable layout: block labels over full-width ruled lines with real
+   writing height. Screen layout above is untouched. */
+@media print{
+  @page{size:Letter;margin:0.7in 0.85in}
+  .fgrid{display:block;margin:8pt 0 6pt}
+  .fgrid>div{display:block;margin:0 0 14pt;page-break-inside:avoid}
+  .fgrid label{display:block;font-size:10pt;line-height:1.35;color:#333;margin:0 0 3pt}
+  .field{display:inline-block;border-bottom:1pt solid #111;min-width:200pt;height:14pt;vertical-align:bottom}
+  .field.wide{display:block;width:100%;min-width:0;height:20pt;margin-top:2pt}
+  .field.wide+.field.wide{margin-top:13pt}
+  .chkrow{margin:0 0 12pt;font-size:12pt;page-break-inside:avoid}
+  .chk{width:11pt;height:11pt;border:1.2pt solid #111;border-radius:1pt;margin-right:7pt;vertical-align:-1.5pt}
+  .chkrow .field{display:block;width:auto;min-width:0;height:17pt;margin:3pt 0 0 18pt}
+  .sigblock{border:1pt solid #666;border-radius:0;background:none;padding:14pt 16pt;margin:14pt 0 6pt;page-break-inside:avoid}
+  .returnbox{border:1pt solid #333;border-radius:0;background:none}
+  h2{page-break-after:avoid}
+  p,li{orphans:3;widows:3}
+}
 </style>
 </head>
 <body>
@@ -58,9 +79,9 @@
   <div class="fgrid">
     <div><label>Company / organization</label><span class="field wide">&nbsp;</span></div>
     <div><label>Relationship to Client (e.g., vendor, consultant)</label><span class="field wide">&nbsp;</span></div>
-    <div class="full"><label>Named individual(s) to receive credentials (access is limited to the individuals named here)</label><span class="field wide">&nbsp;</span></div>
+    <div class="full"><label>Named individual(s) to receive credentials (access is limited to the individuals named here)</label><span class="field wide">&nbsp;</span><span class="field wide">&nbsp;</span></div>
     <div><label>Email / phone</label><span class="field wide">&nbsp;</span></div>
-    <div><label>Third party&rsquo;s stated purpose</label><span class="field wide">&nbsp;</span></div>
+    <div><label>Third party&rsquo;s stated purpose</label><span class="field wide">&nbsp;</span><span class="field wide">&nbsp;</span></div>
   </div>
 
   <h2>3. Scope of Access Authorized</h2>
