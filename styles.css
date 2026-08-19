@@ -108,7 +108,7 @@ nav.main a[aria-current="page"]{color:var(--boom)}
 }
 
 @media print{
-  .site-header,.site-footer,.backlink,nav.main{display:none}
+  .site-header,.site-footer,.backlink,nav.main,.pdf-btn{display:none}
   body{font-size:12pt}
   .effective{border:1px solid #999;background:none;color:#000}
   a{color:#000;text-decoration:none}
@@ -119,3 +119,9 @@ nav.main a[aria-current="page"]{color:var(--boom)}
   .ladder>li{padding-left:44px}
   .ladder>li::before{font-size:10px;padding:2px 5px}
 }
+
+/* PDF download buttons */
+.pdf-btn{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.03em;border:1.5px solid var(--boom);color:var(--boom);padding:1px 9px 2px;border-radius:4px;margin-left:10px;white-space:nowrap;vertical-align:1px}
+.pdf-btn:hover{background:var(--boom);color:#fff;text-decoration:none}
+.effective .pdf-btn{margin-left:12px;background:#fff}
+.effective .pdf-btn:hover{background:var(--boom)}

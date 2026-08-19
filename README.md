@@ -21,6 +21,14 @@ This repository is the source of truth for the site and deploys to Plesk via the
 
 This repository is now the **complete** source of truth for the site.
 
+## PDFs
+
+Date-stamped PDF copies of every document live in `/pdf/` and are linked from the hub
+and each document page. Regenerate after any document change with
+`python3 tools/build-pdfs.py` (requires `pip install weasyprint`), updating the
+effective-date stamp in that script first. Never delete outgoing PDFs — prior
+versions remain in `/pdf/` as the archive.
+
 ## Versioning policy (important)
 
 When a legal document is updated:
