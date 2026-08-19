@@ -50,8 +50,8 @@ nav.main a[aria-current="page"]{color:var(--boom)}
 .kicker{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--boom-deep);margin:0 0 8px}
 
 /* Precedence ladder — hub signature */
-.ladder{margin:36px 0 8px;border-left:3px solid var(--boom);padding-left:0;list-style:none}
-.ladder>li{position:relative;padding:18px 20px 18px 26px;border:1px solid var(--line);border-left:none;background:var(--paper);margin:0}
+.ladder{margin:36px 0 8px 46px;border-left:3px solid var(--boom);padding-left:0;list-style:none}
+.ladder>li{position:relative;padding:18px 20px 18px 64px;border:1px solid var(--line);border-left:none;background:var(--paper);margin:0}
 .ladder>li+li{border-top:none}
 .ladder>li::before{content:attr(data-rank);position:absolute;left:-3px;top:18px;transform:translateX(-50%);background:var(--boom);color:#fff;font-family:'Archivo',sans-serif;font-weight:700;font-size:11px;letter-spacing:.06em;padding:2px 7px;border-radius:3px}
 .ladder h2{margin:0 0 4px;font-size:19px}
@@ -112,4 +112,10 @@ nav.main a[aria-current="page"]{color:var(--boom)}
   body{font-size:12pt}
   .effective{border:1px solid #999;background:none;color:#000}
   a{color:#000;text-decoration:none}
+}
+
+@media (max-width:640px){
+  .ladder{margin-left:34px}
+  .ladder>li{padding-left:44px}
+  .ladder>li::before{font-size:10px;padding:2px 5px}
 }
