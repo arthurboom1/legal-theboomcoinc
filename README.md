@@ -9,11 +9,11 @@ This repository is the source of truth for the site and deploys to Plesk via the
 |---|---|---|
 | `/` | Legal Hub (index) | — |
 | `/master-services-agreement/` | Master Services Agreement | July 1, 2026 |
-| `/service-attachment-managed-services/` | Service Attachment for Managed Services | June 4, 2023 |
-| `/service-attachment-compliance-services/` | Service Attachment for Managed Compliance Services | June 4, 2023 |
-| `/schedule-of-services/` | Schedule of Services | June 4, 2023 |
-| `/schedule-of-third-party-services/` | Schedule of Third-Party Services | June 26, 2024 |
-| `/data-processing-agreement/` | Data Processing Agreement | December 1, 2023 |
+| `/service-attachment-managed-services/` | Service Attachment for Managed Services | July 1, 2026 |
+| `/service-attachment-compliance-services/` | Service Attachment for Managed Compliance Services | July 1, 2026 |
+| `/schedule-of-services/` | Schedule of Services | July 1, 2026 |
+| `/schedule-of-third-party-services/` | Schedule of Third-Party Services | July 1, 2026 |
+| `/data-processing-agreement/` | Data Processing Agreement | July 1, 2026 |
 | `styles.css` | Shared stylesheet | — |
 
 | `/terms-of-service/` | BoomTalk™ VoIP Terms of Service (imported verbatim from production) | July 22, 2026 |
