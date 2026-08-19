@@ -14,6 +14,7 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | `/schedule-of-services/` | Schedule of Services | July 1, 2026 |
 | `/schedule-of-third-party-services/` | Schedule of Third-Party Services | July 1, 2026 |
 | `/data-processing-agreement/` | Data Processing Agreement | July 1, 2026 |
+| `/third-party-access-authorization/` | Third-Party Administrative Access Authorization & Release (client form) | August 19, 2026 |
 | `styles.css` | Shared stylesheet | — |
 
 | `/terms-of-service/` | BoomTalk™ VoIP Terms of Service (imported verbatim from production) | July 22, 2026 |
