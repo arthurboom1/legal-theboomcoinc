@@ -16,9 +16,10 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | `/data-processing-agreement/` | Data Processing Agreement | December 1, 2023 |
 | `styles.css` | Shared stylesheet | — |
 
-`/terms-of-service/` (BoomTalk VoIP ToS) and `/e911/` (911/E911 Notification & Disclosures)
-are live on the server but **not yet in this repository** — copy them in from Plesk before
-enabling any deploy mode that removes files not present in the repo.
+| `/terms-of-service/` | BoomTalk™ VoIP Terms of Service (imported verbatim from production) | July 22, 2026 |
+| `/e911/` | 911/E911 Notification & Disclosures (imported verbatim from production) | July 22, 2026 |
+
+This repository is now the **complete** source of truth for the site.
 
 ## Versioning policy (important)
 
