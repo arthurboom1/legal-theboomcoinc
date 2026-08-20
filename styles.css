@@ -34,9 +34,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--boom);outline-offse
 /* Header */
 .site-header{border-bottom:1px solid var(--line);background:var(--paper)}
 .site-header .bar{max-width:1040px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between}
-.brand{font-family:'Archivo',sans-serif;font-weight:700;font-size:17px;color:var(--ink);display:flex;align-items:center;gap:10px}
+.brand{font-family:'Archivo',sans-serif;font-weight:700;font-size:17px;color:var(--ink);display:flex;align-items:flex-end;gap:10px}
 .brand-logo{display:block;height:24px;width:auto}
-.brand-tag{color:var(--boom);white-space:nowrap}
+.brand-tag{color:var(--boom);white-space:nowrap;line-height:1}
 nav.main a{font-family:'Archivo',sans-serif;font-size:14px;font-weight:600;color:var(--ink-soft);margin-left:18px}
 nav.main a[aria-current="page"]{color:var(--boom)}
 
