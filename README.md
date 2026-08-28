@@ -8,8 +8,10 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | Path | Document | Effective |
 |---|---|---|
 | `/` | Legal Hub (index) | — |
-| `/master-services-agreement/` | Master Services Agreement | July 1, 2026 |
-| `/service-attachment-managed-services/` | Service Attachment for Managed Services | July 1, 2026 |
+| `/master-services-agreement/` | Master Services Agreement | September 1, 2026 |
+| `/master-services-agreement/2026-07-01/` | Master Services Agreement (archived) | July 1, 2026 |
+| `/service-attachment-managed-services/` | Service Attachment for Managed Services | September 1, 2026 |
+| `/service-attachment-managed-services/2026-07-01/` | Service Attachment for Managed Services (archived) | July 1, 2026 |
 | `/service-attachment-compliance-services/` | Service Attachment for Managed Compliance Services | July 1, 2026 |
 | `/schedule-of-services/` | Schedule of Services | July 1, 2026 |
 | `/schedule-of-third-party-services/` | Schedule of Third-Party Services | July 1, 2026 |
