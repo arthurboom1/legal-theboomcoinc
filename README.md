@@ -13,7 +13,8 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | `/service-attachment-managed-services/` | Service Attachment for Managed Services | September 1, 2026 |
 | `/service-attachment-managed-services/2026-07-01/` | Service Attachment for Managed Services (archived) | July 1, 2026 |
 | `/service-attachment-compliance-services/` | Service Attachment for Managed Compliance Services | July 1, 2026 |
-| `/schedule-of-services/` | Schedule of Services | July 1, 2026 |
+| `/schedule-of-services/` | Schedule of Services | September 1, 2026 |
+| `/schedule-of-services/2026-07-01/` | Schedule of Services (archived) | July 1, 2026 |
 | `/schedule-of-third-party-services/` | Schedule of Third-Party Services | July 1, 2026 |
 | `/data-processing-agreement/` | Data Processing Agreement | July 1, 2026 |
 | `/third-party-access-authorization/` | Third-Party Administrative Access Authorization & Release (client form) | August 19, 2026 |

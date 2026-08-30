@@ -23,7 +23,7 @@ DOCS = {
     "master-services-agreement": ("Boom-Logic-Master-Services-Agreement", "2026-09-01"),
     "service-attachment-managed-services": ("Boom-Logic-Service-Attachment-Managed-Services", "2026-09-01"),
     "service-attachment-compliance-services": ("Boom-Logic-Service-Attachment-Compliance-Services", "2026-07-01"),
-    "schedule-of-services": ("Boom-Logic-Schedule-of-Services", "2026-07-01"),
+    "schedule-of-services": ("Boom-Logic-Schedule-of-Services", "2026-09-01"),
     "schedule-of-third-party-services": ("Boom-Logic-Schedule-of-Third-Party-Services", "2026-07-01"),
     "data-processing-agreement": ("Boom-Logic-Data-Processing-Agreement", "2026-07-01"),
     "third-party-access-authorization": ("Boom-Logic-Third-Party-Access-Authorization", "2026-08-19"),
