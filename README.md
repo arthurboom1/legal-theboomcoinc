@@ -1,6 +1,6 @@
 # Boom Logic Legal Portal — legal.theboomcoinc.com
 
-Static HTML legal portal for The Boom Company, Inc. (dba Boom Logic).
+Static HTML legal portal for The Boom Company (dba Boom Logic).
 This repository is the source of truth for the site and deploys to Plesk via the Plesk Git extension.
 
 ## Structure
