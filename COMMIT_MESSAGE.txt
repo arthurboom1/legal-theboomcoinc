@@ -1,0 +1,13 @@
+2026-10-01 legal release: BoomTalk VoIP + BoomTalk Live
+
+- Schedule of Services: new version effective 2026-10-01. Adds "BoomTalk Communications
+  Services" section (BoomTalk VoIP; BoomTalk Live). Existing sections unchanged.
+  Outgoing 2026-09-01 version archived at /schedule-of-services/2026-09-01/ (noindex).
+- Service Attachment for BoomTalk Live: new document effective 2026-10-01 at
+  /service-attachment-boomtalk-live/. Added to hub under Service Attachments & Schedules.
+- Schedule of Third-Party Services: new version effective 2026-10-01. Adds Bicom Systems
+  (BoomTalk VoIP platform) and QuickBlox / Injoit Ltd (BoomTalk Live platform). No other
+  change. Outgoing 2026-07-01 version archived at /schedule-of-third-party-services/2026-07-01/.
+- Hub: updated effective dates and PDF links; lede now names BoomTalk Live.
+- PDFs: three new date-stamped PDFs added; no existing PDF modified or removed.
+- README and tools/build-pdfs.py updated.
