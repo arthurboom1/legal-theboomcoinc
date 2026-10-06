@@ -1,13 +1,19 @@
-2026-10-01 legal release: BoomTalk VoIP + BoomTalk Live
+2026-09-22 legal release: E911 pass-through charges + NITEP escalator trigger
 
-- Schedule of Services: new version effective 2026-10-01. Adds "BoomTalk Communications
-  Services" section (BoomTalk VoIP; BoomTalk Live). Existing sections unchanged.
-  Outgoing 2026-09-01 version archived at /schedule-of-services/2026-09-01/ (noindex).
-- Service Attachment for BoomTalk Live: new document effective 2026-10-01 at
-  /service-attachment-boomtalk-live/. Added to hub under Service Attachments & Schedules.
-- Schedule of Third-Party Services: new version effective 2026-10-01. Adds Bicom Systems
-  (BoomTalk VoIP platform) and QuickBlox / Injoit Ltd (BoomTalk Live platform). No other
-  change. Outgoing 2026-07-01 version archived at /schedule-of-third-party-services/2026-07-01/.
-- Hub: updated effective dates and PDF links; lede now names BoomTalk Live.
-- PDFs: three new date-stamped PDFs added; no existing PDF modified or removed.
-- README and tools/build-pdfs.py updated.
+- Master Services Agreement: new version effective 2026-09-22.
+  "Surcharges" now defines the term and expressly includes 911, E911, and Next
+  Generation 911 surcharges; pass-through without markup; separately stated where
+  required by law; not waived by tax exemption certificates; cross-reference to the
+  BoomTalk VoIP ToS and E911 Notice. Annual escalator: NITEP 3% rate now triggered by
+  an Order line item labeled "NITEP-discounted" or express NITEP identification.
+  5%/3% escalator otherwise unchanged. Outgoing 2026-09-01 version archived at
+  /master-services-agreement/2026-09-01/ (noindex).
+- BoomTalk VoIP Terms of Service: new version effective 2026-09-22. Adds Section 6.7
+  (911/E911 Charges): (a) government 911 surcharges, (b) E911 service fee,
+  (c) per-call 911 charges. Outgoing 2026-07-22 version archived at
+  /terms-of-service/2026-07-22/ (noindex).
+- 911/E911 Notification & Disclosures: new version effective 2026-09-22. Adds "911
+  Charges" paragraph; ECRC per-call rate now "stated in the Service Order or posted on
+  Company's website". Outgoing 2026-07-22 version archived at /e911/2026-07-22/.
+- Hub, README, tools/build-pdfs.py updated. Three new date-stamped PDFs added; no
+  existing PDF modified or removed.

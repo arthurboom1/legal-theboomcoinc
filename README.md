@@ -8,7 +8,8 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | Path | Document | Effective |
 |---|---|---|
 | `/` | Legal Hub (index) | — |
-| `/master-services-agreement/` | Master Services Agreement | September 1, 2026 |
+| `/master-services-agreement/` | Master Services Agreement | September 22, 2026 |
+| `/master-services-agreement/2026-09-01/` | Master Services Agreement (archived) | September 1, 2026 |
 | `/master-services-agreement/2026-07-01/` | Master Services Agreement (archived) | July 1, 2026 |
 | `/service-attachment-managed-services/` | Service Attachment for Managed Services | September 1, 2026 |
 | `/service-attachment-managed-services/2026-07-01/` | Service Attachment for Managed Services (archived) | July 1, 2026 |
@@ -23,8 +24,10 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | `/third-party-access-authorization/` | Third-Party Administrative Access Authorization & Release (client form) | August 19, 2026 |
 | `styles.css` | Shared stylesheet | — |
 
-| `/terms-of-service/` | BoomTalk™ VoIP Terms of Service (imported verbatim from production) | July 22, 2026 |
-| `/e911/` | 911/E911 Notification & Disclosures (imported verbatim from production) | July 22, 2026 |
+| `/terms-of-service/` | BoomTalk™ VoIP Terms of Service | September 22, 2026 |
+| `/terms-of-service/2026-07-22/` | BoomTalk™ VoIP Terms of Service (archived) | July 22, 2026 |
+| `/e911/` | 911/E911 Notification & Disclosures | September 22, 2026 |
+| `/e911/2026-07-22/` | 911/E911 Notification & Disclosures (archived) | July 22, 2026 |
 
 This repository is now the **complete** source of truth for the site.
 

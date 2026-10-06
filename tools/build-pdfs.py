@@ -20,7 +20,7 @@ OUT.mkdir(exist_ok=True)
 
 # page dir -> (output basename, effective date stamp)
 DOCS = {
-    "master-services-agreement": ("Boom-Logic-Master-Services-Agreement", "2026-09-01"),
+    "master-services-agreement": ("Boom-Logic-Master-Services-Agreement", "2026-09-22"),
     "service-attachment-managed-services": ("Boom-Logic-Service-Attachment-Managed-Services", "2026-09-01"),
     "service-attachment-compliance-services": ("Boom-Logic-Service-Attachment-Compliance-Services", "2026-07-01"),
     "service-attachment-boomtalk-live": ("Boom-Logic-Service-Attachment-BoomTalk-Live", "2026-10-01"),
@@ -28,8 +28,8 @@ DOCS = {
     "schedule-of-third-party-services": ("Boom-Logic-Schedule-of-Third-Party-Services", "2026-10-01"),
     "data-processing-agreement": ("Boom-Logic-Data-Processing-Agreement", "2026-07-01"),
     "third-party-access-authorization": ("Boom-Logic-Third-Party-Access-Authorization", "2026-08-19"),
-    "terms-of-service": ("Boom-Logic-BoomTalk-VoIP-Terms-of-Service", "2026-07-22"),
-    "e911": ("Boom-Logic-911-E911-Notification-Disclosures", "2026-07-22"),
+    "terms-of-service": ("Boom-Logic-BoomTalk-VoIP-Terms-of-Service", "2026-09-22"),
+    "e911": ("Boom-Logic-911-E911-Notification-Disclosures", "2026-09-22"),
 }
 
 css_abs = (ROOT / "styles.css").as_uri()
