@@ -22,6 +22,7 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | `/schedule-of-third-party-services/2026-07-01/` | Schedule of Third-Party Services (archived) | July 1, 2026 |
 | `/data-processing-agreement/` | Data Processing Agreement | July 1, 2026 |
 | `/third-party-access-authorization/` | Third-Party Administrative Access Authorization & Release (client form) | August 19, 2026 |
+| `/mutual-nda/` | Mutual Non-Disclosure Agreement (prospect form; standalone, not in precedence ladder) | October 8, 2026 |
 | `styles.css` | Shared stylesheet | — |
 
 | `/terms-of-service/` | BoomTalk™ VoIP Terms of Service | September 22, 2026 |

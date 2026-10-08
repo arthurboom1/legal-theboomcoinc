@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mutual Non-Disclosure Agreement | Boom Logic Legal</title>
+<meta name="description" content="Standard mutual non-disclosure agreement for prospective clients and business partners of The Boom Company (dba Boom Logic), to be signed before confidential information is exchanged.">
+<link rel="canonical" href="https://legal.theboomcoinc.com/mutual-nda/">
+<link rel="icon" type="image/png" href="https://boomlogic.com/wp-content/uploads/2023/06/android-chrome-120-1.png">
+<link rel="apple-touch-icon" href="https://boomlogic.com/wp-content/uploads/2023/06/android-chrome-120-1.png">
+<link rel="stylesheet" href="/styles.css">
+<style>
+.field{border-bottom:1px solid var(--ink);display:inline-block;min-width:220px;height:1.2em;vertical-align:bottom}
+.field.wide{min-width:100%;margin-top:4px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin:10px 0 18px}
+.fgrid .full{grid-column:1/-1}
+.fgrid label{font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:600;color:var(--ink-soft);display:block}
+.sigblock{border:1px solid var(--line);border-radius:8px;background:var(--wash);padding:20px 22px;margin:20px 0 8px}
+.sigblock h3{margin:0 0 12px;font-size:16px}
+.sigblock .fgrid{margin-bottom:6px}
+.sigblock .fixed{font-size:15.5px;margin:2px 0 0}
+.returnbox{border:1.5px solid var(--boom);border-radius:8px;background:var(--banner);padding:14px 18px;margin:22px 0;font-size:15px}
+.returnbox p{margin:0 0 8px}.returnbox p:last-child{margin:0}
+.clauses .cl{margin:0 0 14px}
+ol.sub{list-style:lower-alpha;margin:6px 0 0;padding-left:28px}
+ol.sub li{margin:0 0 6px}
+@media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+
+/* Print / PDF layout — WeasyPrint-safe single column (no CSS grid). */
+@media print{
+  @page{size:Letter;margin:0.7in 0.85in}
+  body{font-size:11pt;line-height:1.45}
+  .fgrid{display:block;margin:8pt 0 6pt}
+  .fgrid>div{display:block;margin:0 0 13pt;page-break-inside:avoid}
+  .fgrid label{display:block;font-size:10pt;line-height:1.35;color:#333;margin:0 0 3pt}
+  .field{display:inline-block;border-bottom:1pt solid #111;min-width:200pt;height:14pt;vertical-align:bottom}
+  .field.wide{display:block;width:100%;min-width:0;height:20pt;margin-top:2pt}
+  .sigblock{border:1pt solid #666;border-radius:0;background:none;padding:12pt 16pt;margin:12pt 0 6pt;page-break-inside:avoid}
+  .returnbox{border:1pt solid #333;border-radius:0;background:none}
+  .no-print{display:none}
+  .sigs{page-break-inside:avoid}
+  .versions{display:none}
+  .doc-head{padding-top:0}
+  h2{margin-top:16pt}
+  h2{page-break-after:avoid}
+  p,li{orphans:3;widows:3}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="bar">
+    <div class="brand"><a href="/" aria-label="The Boom Company — Legal Hub"><img src="/assets/theboomco-logo.png" alt="The Boom Co." class="brand-logo" width="224" height="48"></a><span class="brand-tag">— Legal</span></div>
+    <nav class="main" aria-label="Primary">
+      <a href="/">Legal Hub</a>
+      <a href="/master-services-agreement/">MSA</a>
+      <a href="/terms-of-service/">BoomTalk Terms</a>
+      <a href="/e911/">911/E911 Notice</a>
+      <a href="https://boomlogic.com/">boomlogic.com</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="doc-head">
+    <h1>Mutual Non-Disclosure Agreement</h1>
+    <p class="effective"><b>Form version October 8, 2026.</b> This form supersedes and replaces all prior versions. <a class="pdf-btn" href="/pdf/Boom-Logic-Mutual-NDA-2026-10-08.pdf" download>Download PDF</a></p>
+  </div>
+
+  <div class="returnbox">
+    <p><strong>How to sign:</strong> Download the PDF, complete Section 1 (Parties) and the Counterparty signature block in Section 3, and email the signed copy to <a href="mailto:legal@theboomcoinc.com">legal@theboomcoinc.com</a>. Boom Logic will countersign and return a fully executed copy to you. This Agreement takes effect only when signed by both parties.</p>
+    <!-- E-SIGNATURE: once the signing service is live, replace the paragraph above with:
+    <p><strong>How to sign:</strong> Click <strong>Sign electronically</strong> to complete and sign this Agreement online. Boom Logic will be notified to countersign, and both parties will receive the fully executed copy by email. You may instead download the PDF, sign it, and email it to <a href="mailto:legal@theboomcoinc.com">legal@theboomcoinc.com</a>.</p>
+    <p class="no-print"><a class="pdf-btn" href="SIGNING-LINK-HERE" style="margin-left:0">Sign electronically</a></p>
+    -->
+  </div>
+
+  <h2>1. Parties</h2>
+  <p>This Mutual Non-Disclosure Agreement (this &ldquo;Agreement&rdquo;) is entered into between <strong>The Boom Company (dba Boom Logic)</strong>, 1106 Colorado Blvd, Los Angeles, CA 90041 (&ldquo;Boom Logic&rdquo;), and the organization identified below (&ldquo;Counterparty&rdquo;). Boom Logic and Counterparty are each a &ldquo;Party&rdquo; and together the &ldquo;Parties.&rdquo;</p>
+  <div class="fgrid">
+    <div><label>Counterparty legal name</label><span class="field wide">&nbsp;</span></div>
+    <div><label>Entity type and state of organization (e.g., California nonprofit corporation)</label><span class="field wide">&nbsp;</span></div>
+    <div class="full"><label>Address</label><span class="field wide">&nbsp;</span></div>
+    <div><label>Contact for notices (name &amp; title)</label><span class="field wide">&nbsp;</span></div>
+    <div><label>Notice email</label><span class="field wide">&nbsp;</span></div>
+  </div>
+
+  <h2>2. Terms</h2>
+  <div class="clauses">
+    <div class="cl"><strong>1. Purpose.</strong> The Parties wish to exchange information to evaluate, discuss, and negotiate a potential business relationship, which may include managed IT, cybersecurity, compliance, cloud hosting, network, and BoomTalk&trade; communications services, assessments, proposals, and pricing (the &ldquo;Purpose&rdquo;).</div>
+
+    <div class="cl"><strong>2. Confidential Information.</strong> &ldquo;Confidential Information&rdquo; means all non-public information disclosed by or on behalf of one Party (the &ldquo;Discloser&rdquo;) to the other (the &ldquo;Recipient&rdquo;), in any form and whether before or after the Effective Date, in connection with the Purpose, that is marked or identified as confidential or that a reasonable person would understand to be confidential given its nature and the circumstances of disclosure. Confidential Information includes, without limitation:
+      <ol class="sub">
+        <li>with respect to Boom Logic: proposals, quotations, unpublished pricing and pricing structures, service designs, statements of work, security and assessment methodologies and reports, tooling, network and system architecture designs, vendor relationships, and business plans;</li>
+        <li>with respect to Counterparty: information about its systems, networks, applications, users, vendors, operations, finances, and business plans; and</li>
+        <li>with respect to either Party: <strong>Security Information</strong>, meaning any information about network topology, system configurations, security controls, vulnerabilities, assessment or scan results, incident history, or access methods; and the existence, status, and terms of the Parties&rsquo; discussions.</li>
+      </ol>
+    </div>
+
+    <div class="cl"><strong>3. Exclusions.</strong> Confidential Information does not include information that the Recipient can demonstrate: (a) is or becomes publicly available through no breach of this Agreement by the Recipient or its Representatives; (b) was lawfully known to the Recipient without restriction before receipt from the Discloser; (c) is lawfully received from a third party without a duty of confidentiality; or (d) is independently developed by the Recipient without use of or reference to the Discloser&rsquo;s Confidential Information.</div>
+
+    <div class="cl"><strong>4. Obligations.</strong> The Recipient shall: (a) use the Discloser&rsquo;s Confidential Information only for the Purpose; (b) not disclose it to anyone other than its and its affiliates&rsquo; employees, officers, directors, contractors, and professional advisors who need to know it for the Purpose and who are bound by confidentiality obligations at least as protective as this Agreement (&ldquo;Representatives&rdquo;); and (c) protect it using at least the degree of care it uses for its own information of similar sensitivity, and no less than reasonable care. Each Party is responsible for any breach of this Agreement by its Representatives.</div>
+
+    <div class="cl"><strong>5. Regulated Data and Credentials Excluded.</strong> The Parties do not intend to exchange, and shall not disclose under this Agreement, protected health information as defined under HIPAA, payment card data, Social Security numbers, financial account numbers, or other personal information regulated by law (&ldquo;Regulated Data&rdquo;), or live passwords, keys, or other access credentials to production systems. If evaluating the Purpose requires access to Regulated Data or to Counterparty&rsquo;s systems (for example, a network or security assessment), the Parties will first enter into a written agreement that governs that access, including, where applicable, a business associate agreement or Boom Logic&rsquo;s <a href="/data-processing-agreement/">Data Processing Agreement</a>. If Regulated Data is disclosed inadvertently, the Recipient will notify the Discloser promptly and, at the Discloser&rsquo;s direction, return or securely destroy it.</div>
+
+    <div class="cl"><strong>6. Compelled Disclosure.</strong> If the Recipient or its Representatives are required by law, regulation, subpoena, or court order to disclose Confidential Information, the Recipient will, where legally permitted, give the Discloser prompt written notice and reasonable cooperation so the Discloser may seek a protective order or other remedy, and will disclose only the portion legally required.</div>
+
+    <div class="cl"><strong>7. Term.</strong> This Agreement covers disclosures made during the two (2) years following the Effective Date, unless earlier terminated by either Party on thirty (30) days&rsquo; written notice. The Recipient&rsquo;s obligations continue for three (3) years after the end of that period, except that obligations for Security Information continue for five (5) years after the end of that period, and obligations for trade secrets continue for as long as the information remains a trade secret under applicable law.</div>
+
+    <div class="cl"><strong>8. Return or Destruction.</strong> Upon the Discloser&rsquo;s written request or the end of discussions, the Recipient will promptly return or destroy the Discloser&rsquo;s Confidential Information and, on request, confirm in writing that it has done so. The Recipient may retain copies (a) as required by law or its document-retention policies, or (b) in automated backup systems until they are overwritten in the ordinary course, provided that retained copies remain subject to this Agreement.</div>
+
+    <div class="cl"><strong>9. No License; No Warranty.</strong> All Confidential Information remains the property of the Discloser. No license or other right is granted except the limited right to use Confidential Information for the Purpose. CONFIDENTIAL INFORMATION IS PROVIDED &ldquo;AS IS,&rdquo; WITHOUT WARRANTY OF ANY KIND, AND NEITHER PARTY IS LIABLE FOR THE OTHER&rsquo;S USE OF OR RELIANCE ON IT, EXCEPT AS PROVIDED IN A DEFINITIVE WRITTEN AGREEMENT.</div>
+
+    <div class="cl"><strong>10. No Obligation to Proceed.</strong> This Agreement does not obligate either Party to disclose any particular information or to enter into any further agreement or transaction, and it does not restrict either Party from offering or obtaining similar products or services from others, provided it does not use or disclose the other Party&rsquo;s Confidential Information in doing so. Proposals and quotations exchanged under this Agreement are not binding offers unless and until accepted as provided in their terms.</div>
+
+    <div class="cl"><strong>11. Relationship to a Later Agreement.</strong> If the Parties enter into a Master Services Agreement or other definitive agreement, the confidentiality terms of that agreement will govern information disclosed on or after its effective date, and this Agreement will continue to govern Confidential Information disclosed before that date.</div>
+
+    <div class="cl"><strong>12. Remedies.</strong> Unauthorized use or disclosure of Confidential Information may cause irreparable harm for which monetary damages would be an inadequate remedy. The Discloser is entitled to seek injunctive or other equitable relief to prevent or restrain any actual or threatened breach, in addition to any other remedy available at law or in equity.</div>
+
+    <div class="cl"><strong>13. Governing Law; Disputes.</strong> This Agreement is governed by the laws of the State of California, without regard to its conflict-of-laws rules. The Parties shall first attempt to resolve any dispute arising out of or relating to this Agreement through good-faith discussions for thirty (30) days. Any dispute not so resolved shall be settled by binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules before one (1) arbitrator in Los Angeles County, California. Notwithstanding the foregoing, either Party may seek temporary, preliminary, or permanent injunctive relief under Paragraph 12 in the state or federal courts located in Los Angeles County, California, and each Party consents to the jurisdiction of those courts for that purpose. The prevailing Party in any proceeding to enforce this Agreement is entitled to recover its reasonable attorneys&rsquo; fees and costs.</div>
+
+    <div class="cl"><strong>14. Notices.</strong> Notices under this Agreement must be in writing and are effective when delivered by email to the notice email stated in Section 1 for Counterparty, or to <a href="mailto:legal@theboomcoinc.com">legal@theboomcoinc.com</a> for Boom Logic, or by courier or certified mail to the Party&rsquo;s address stated in Section 1. Either Party may update its notice details by written notice to the other.</div>
+
+    <div class="cl"><strong>15. Electronic Signatures; Counterparts.</strong> This Agreement may be executed in counterparts and by electronic signature, each of which is deemed an original and all of which together constitute one instrument. Each Party consents to the use of electronic records and signatures under the federal Electronic Signatures in Global and National Commerce Act and the California Uniform Electronic Transactions Act, and agrees that an electronic signature is as legally binding as a handwritten signature.</div>
+
+    <div class="cl"><strong>16. General.</strong> This Agreement is the entire agreement of the Parties regarding its subject matter and supersedes all prior or contemporaneous understandings regarding that subject matter. It may be amended or waived only in a writing signed by both Parties. Neither Party may assign this Agreement without the other Party&rsquo;s prior written consent, except to a successor in a merger, acquisition, or sale of all or substantially all of its assets or of the business to which this Agreement relates. If any provision is held unenforceable, it will be enforced to the maximum extent permissible and the remaining provisions will remain in effect. No failure or delay in exercising any right is a waiver of that right. Nothing in this Agreement creates an agency, partnership, joint venture, or employment relationship. Each signatory represents that they are authorized to bind the Party for which they sign.</div>
+
+    <div class="cl"><strong>17. Effective Date.</strong> This Agreement takes effect on the date it has been signed by both Parties, as shown by the later of the dates below (the &ldquo;Effective Date&rdquo;).</div>
+  </div>
+
+  <div class="sigs">
+  <h2>3. Signatures</h2>
+  <div class="sigblock">
+    <h3>Counterparty</h3>
+    <div class="fgrid">
+      <div><label>Signature</label><span class="field wide">&nbsp;</span></div>
+      <div><label>Date</label><span class="field wide">&nbsp;</span></div>
+      <div><label>Printed name</label><span class="field wide">&nbsp;</span></div>
+      <div><label>Title</label><span class="field wide">&nbsp;</span></div>
+    </div>
+  </div>
+  <div class="sigblock">
+    <h3>The Boom Company (dba Boom Logic)</h3>
+    <div class="fgrid">
+      <div><label>Signature</label><span class="field wide">&nbsp;</span></div>
+      <div><label>Date</label><span class="field wide">&nbsp;</span></div>
+      <div><label>Printed name</label><span class="field wide">&nbsp;</span></div>
+      <div><label>Title</label><span class="field wide">&nbsp;</span></div>
+    </div>
+  </div>
+  </div>
+
+  <section class="versions" aria-labelledby="vh">
+    <h2 id="vh">Version history</h2>
+    <table>
+      <tr><th>Version</th><th>Effective</th><th>Status</th></tr>
+      <tr><td>Mutual Non-Disclosure Agreement</td><td>October 8, 2026</td><td>Current — initial version.</td></tr>
+    </table>
+  </section>
+
+  <a class="backlink" href="/">&larr; Back to Legal Hub</a>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    © 2026 The Boom Company (dba Boom Logic) · 1106 Colorado Blvd, Los Angeles, CA 90041 · <a href="mailto:legal@theboomcoinc.com">legal@theboomcoinc.com</a><br>
+    Legal notices: <a href="https://legal.theboomcoinc.com/">legal.theboomcoinc.com</a> · Support: <a href="https://my.boom.help">my.boom.help</a> (portal under construction — available soon)
+  </div>
+</footer>
+</body>
+</html>
