@@ -8,19 +8,28 @@ This repository is the source of truth for the site and deploys to Plesk via the
 | Path | Document | Effective |
 |---|---|---|
 | `/` | Legal Hub (index) | — |
-| `/master-services-agreement/` | Master Services Agreement | September 22, 2026 |
+| `/master-services-agreement/` | Master Services Agreement | November 2, 2026 |
+| `/master-services-agreement/2026-09-22/` | Master Services Agreement (archived) | September 22, 2026 |
 | `/master-services-agreement/2026-09-01/` | Master Services Agreement (archived) | September 1, 2026 |
 | `/master-services-agreement/2026-07-01/` | Master Services Agreement (archived) | July 1, 2026 |
-| `/service-attachment-managed-services/` | Service Attachment for Managed Services | September 1, 2026 |
+| `/service-attachment-managed-services/` | Service Attachment for Managed Services | November 2, 2026 |
+| `/service-attachment-managed-services/2026-09-01/` | Service Attachment for Managed Services (archived) | September 1, 2026 |
 | `/service-attachment-managed-services/2026-07-01/` | Service Attachment for Managed Services (archived) | July 1, 2026 |
-| `/service-attachment-compliance-services/` | Service Attachment for Managed Compliance Services | July 1, 2026 |
-| `/service-attachment-boomtalk-live/` | Service Attachment for BoomTalk™ Live | October 1, 2026 |
-| `/schedule-of-services/` | Schedule of Services | October 1, 2026 |
+| `/service-attachment-compliance-services/` | Service Attachment for Managed Compliance Services | November 2, 2026 |
+| `/service-attachment-compliance-services/2026-07-01/` | Service Attachment for Managed Compliance Services (archived) | July 1, 2026 |
+| `/service-attachment-boomtalk-live/` | Service Attachment for BoomTalk™ Live | November 2, 2026 |
+| `/service-attachment-boomtalk-live/2026-10-01/` | Service Attachment for BoomTalk™ Live (archived) | October 1, 2026 |
+| `/schedule-of-services/` | Schedule of Services | November 2, 2026 |
+| `/schedule-of-services/2026-10-01/` | Schedule of Services (archived) | October 1, 2026 |
 | `/schedule-of-services/2026-09-01/` | Schedule of Services (archived) | September 1, 2026 |
 | `/schedule-of-services/2026-07-01/` | Schedule of Services (archived) | July 1, 2026 |
-| `/schedule-of-third-party-services/` | Schedule of Third-Party Services | October 1, 2026 |
+| `/schedule-of-third-party-services/` | Schedule of Third-Party Services | November 2, 2026 |
+| `/schedule-of-third-party-services/2026-10-01/` | Schedule of Third-Party Services (archived) | October 1, 2026 |
 | `/schedule-of-third-party-services/2026-07-01/` | Schedule of Third-Party Services (archived) | July 1, 2026 |
-| `/data-processing-agreement/` | Data Processing Agreement | July 1, 2026 |
+| `/business-associate-agreement/` | Business Associate Agreement (new) | November 2, 2026 |
+| `/service-level-schedule/` | Service Level Schedule (new) | November 2, 2026 |
+| `/data-processing-agreement/` | Data Processing Agreement | November 2, 2026 |
+| `/data-processing-agreement/2026-07-01/` | Data Processing Agreement (archived) | July 1, 2026 |
 | `/third-party-access-authorization/` | Third-Party Administrative Access Authorization & Release (client form) | August 19, 2026 |
 | `/mutual-nda/` | Mutual Non-Disclosure Agreement (prospect form; standalone, not in precedence ladder) | October 8, 2026 |
 | `styles.css` | Shared stylesheet | — |
@@ -33,6 +42,8 @@ This repository is the source of truth for the site and deploys to Plesk via the
 This repository is now the **complete** source of truth for the site.
 
 ## PDFs
+
+PDFs are the authoritative text of each version and are what customer Orders link to. `tools/build-pdfs.py` never rebuilds a PDF that already exists and regenerates `pdf/SHA256SUMS.txt` on every run.
 
 Date-stamped PDF copies of every document live in `/pdf/` and are linked from the hub
 and each document page. Regenerate after any document change with

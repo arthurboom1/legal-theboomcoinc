@@ -20,13 +20,15 @@ OUT.mkdir(exist_ok=True)
 
 # page dir -> (output basename, effective date stamp)
 DOCS = {
-    "master-services-agreement": ("Boom-Logic-Master-Services-Agreement", "2026-09-22"),
-    "service-attachment-managed-services": ("Boom-Logic-Service-Attachment-Managed-Services", "2026-09-01"),
-    "service-attachment-compliance-services": ("Boom-Logic-Service-Attachment-Compliance-Services", "2026-07-01"),
-    "service-attachment-boomtalk-live": ("Boom-Logic-Service-Attachment-BoomTalk-Live", "2026-10-01"),
-    "schedule-of-services": ("Boom-Logic-Schedule-of-Services", "2026-10-01"),
-    "schedule-of-third-party-services": ("Boom-Logic-Schedule-of-Third-Party-Services", "2026-10-01"),
-    "data-processing-agreement": ("Boom-Logic-Data-Processing-Agreement", "2026-07-01"),
+    "master-services-agreement": ("Boom-Logic-Master-Services-Agreement", "2026-11-02"),
+    "service-attachment-managed-services": ("Boom-Logic-Service-Attachment-Managed-Services", "2026-11-02"),
+    "service-attachment-compliance-services": ("Boom-Logic-Service-Attachment-Compliance-Services", "2026-11-02"),
+    "service-attachment-boomtalk-live": ("Boom-Logic-Service-Attachment-BoomTalk-Live", "2026-11-02"),
+    "schedule-of-services": ("Boom-Logic-Schedule-of-Services", "2026-11-02"),
+    "schedule-of-third-party-services": ("Boom-Logic-Schedule-of-Third-Party-Services", "2026-11-02"),
+    "business-associate-agreement": ("Boom-Logic-Business-Associate-Agreement", "2026-11-02"),
+    "service-level-schedule": ("Boom-Logic-Service-Level-Schedule", "2026-11-02"),
+    "data-processing-agreement": ("Boom-Logic-Data-Processing-Agreement", "2026-11-02"),
     "third-party-access-authorization": ("Boom-Logic-Third-Party-Access-Authorization", "2026-08-19"),
     "mutual-nda": ("Boom-Logic-Mutual-NDA", "2026-10-08"),
     "terms-of-service": ("Boom-Logic-BoomTalk-VoIP-Terms-of-Service", "2026-09-22"),
@@ -38,5 +40,13 @@ for page_dir, (name, eff) in DOCS.items():
     src = ROOT / page_dir / "index.html"
     html = src.read_text(encoding="utf-8").replace('href="/styles.css"', f'href="{css_abs}"')
     dest = OUT / f"{name}-{eff}.pdf"
+    if dest.exists():
+        print(f"skip {dest.name} (published PDFs are never rebuilt)")
+        continue
     HTML(string=html, base_url=str(src.parent)).write_pdf(str(dest))
     print(f"built {dest.relative_to(ROOT)} ({dest.stat().st_size//1024} KB)")
+
+import hashlib
+lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}" for p in sorted(OUT.glob("*.pdf"))]
+(OUT / "SHA256SUMS.txt").write_text("\n".join(lines) + "\n")
+print(f"wrote pdf/SHA256SUMS.txt ({len(lines)} files)")
