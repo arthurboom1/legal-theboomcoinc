@@ -50,3 +50,55 @@ import hashlib
 lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}" for p in sorted(OUT.glob("*.pdf"))]
 (OUT / "SHA256SUMS.txt").write_text("\n".join(lines) + "\n")
 print(f"wrote pdf/SHA256SUMS.txt ({len(lines)} files)")
+
+# ---------------------------------------------------------------------------
+# Contract-document manifest for the quote composer: /contract-documents.json
+# Lists the CURRENT version of every document an Order can incorporate, with
+# its authoritative PDF URL and SHA-256. Update RELEASE and APPLIES when a new
+# legal release is published.
+import json
+RELEASE = "2026-11-02"
+BASE = "https://legal.theboomcoinc.com"
+APPLIES = {  # page dir -> (title, when the quote composer should list it)
+    "master-services-agreement": ("Master Services Agreement", "always"),
+    "service-attachment-managed-services": ("Service Attachment for Managed Services", "service:managed"),
+    "service-level-schedule": ("Service Level Schedule", "always"),
+    "schedule-of-services": ("Schedule of Services", "always"),
+    "schedule-of-third-party-services": ("Schedule of Third-Party Services", "always"),
+    "business-associate-agreement": ("Business Associate Agreement", "hipaa"),
+    "data-processing-agreement": ("Data Processing Agreement", "always"),
+    "service-attachment-compliance-services": ("Service Attachment for Managed Compliance Services", "service:compliance"),
+    "service-attachment-boomtalk-live": ("Service Attachment for BoomTalk™ Live", "service:boomtalk-live"),
+    "terms-of-service": ("BoomTalk™ VoIP Terms of Service", "service:boomtalk-voip"),
+    "e911": ("911/E911 Notification and Disclosures", "service:boomtalk-voip"),
+}
+from datetime import date
+docs = []
+for page_dir, (title, applies) in APPLIES.items():
+    name, eff = DOCS[page_dir]
+    pdf = OUT / f"{name}-{eff}.pdf"
+    d = date.fromisoformat(eff)
+    docs.append({
+        "title": title,
+        "effective": eff,
+        "effective_display": f"{d.strftime('%B')} {d.day}, {d.year}",
+        "applies": applies,
+        "page_url": f"{BASE}/{page_dir}/",
+        "pdf_url": f"{BASE}/pdf/{pdf.name}",
+        "sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
+    })
+manifest = {
+    "release": RELEASE,
+    "provider": "The Boom Company (dba Boom Logic)",
+    "applies_values": {
+        "always": "List on every Order.",
+        "hipaa": "List on every Order; applies when Client is a HIPAA covered entity or business associate (MSA 13.2).",
+        "service:managed": "List when the Order includes managed IT, security, backup, or network services.",
+        "service:compliance": "List when the Order includes managed compliance services.",
+        "service:boomtalk-live": "List when the Order includes BoomTalk Live.",
+        "service:boomtalk-voip": "List when the Order includes BoomTalk VoIP.",
+    },
+    "documents": docs,
+}
+(ROOT / "contract-documents.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
+print(f"wrote contract-documents.json ({len(docs)} documents)")

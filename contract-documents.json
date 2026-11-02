@@ -1,0 +1,113 @@
+{
+  "release": "2026-11-02",
+  "provider": "The Boom Company (dba Boom Logic)",
+  "applies_values": {
+    "always": "List on every Order.",
+    "hipaa": "List on every Order; applies when Client is a HIPAA covered entity or business associate (MSA 13.2).",
+    "service:managed": "List when the Order includes managed IT, security, backup, or network services.",
+    "service:compliance": "List when the Order includes managed compliance services.",
+    "service:boomtalk-live": "List when the Order includes BoomTalk Live.",
+    "service:boomtalk-voip": "List when the Order includes BoomTalk VoIP."
+  },
+  "documents": [
+    {
+      "title": "Master Services Agreement",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "always",
+      "page_url": "https://legal.theboomcoinc.com/master-services-agreement/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Master-Services-Agreement-2026-11-02.pdf",
+      "sha256": "7957d614a432416a4cd2e96ee5e9a22c670f884b94ca94e29305514a36609193"
+    },
+    {
+      "title": "Service Attachment for Managed Services",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "service:managed",
+      "page_url": "https://legal.theboomcoinc.com/service-attachment-managed-services/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Service-Attachment-Managed-Services-2026-11-02.pdf",
+      "sha256": "6db08ec998d30a9b46485bbc254a107f19db5f79eed28548ee97350ceabf603a"
+    },
+    {
+      "title": "Service Level Schedule",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "always",
+      "page_url": "https://legal.theboomcoinc.com/service-level-schedule/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Service-Level-Schedule-2026-11-02.pdf",
+      "sha256": "7aa6965c85e58f8aeca9e1d2d774ee584f2bde3e6a96e2f02e9f1c235d259b66"
+    },
+    {
+      "title": "Schedule of Services",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "always",
+      "page_url": "https://legal.theboomcoinc.com/schedule-of-services/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Schedule-of-Services-2026-11-02.pdf",
+      "sha256": "c434d4e453f17c8b29a52c001aad9d7ee8ff434cd5965825a7aa7ecc09e9f86e"
+    },
+    {
+      "title": "Schedule of Third-Party Services",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "always",
+      "page_url": "https://legal.theboomcoinc.com/schedule-of-third-party-services/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Schedule-of-Third-Party-Services-2026-11-02.pdf",
+      "sha256": "c2a7c97cca8ce18a947737479b8a03a4fef4e66e01ab023bef22595d3e4dc33b"
+    },
+    {
+      "title": "Business Associate Agreement",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "hipaa",
+      "page_url": "https://legal.theboomcoinc.com/business-associate-agreement/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Business-Associate-Agreement-2026-11-02.pdf",
+      "sha256": "27fba3d6bcac9920c7aeb4149ad4e69b097506cc1b3acefb751a564596ab88c4"
+    },
+    {
+      "title": "Data Processing Agreement",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "always",
+      "page_url": "https://legal.theboomcoinc.com/data-processing-agreement/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Data-Processing-Agreement-2026-11-02.pdf",
+      "sha256": "79242df895a70771e9450536e5b631323b9b76e509defb14885428e883e8b689"
+    },
+    {
+      "title": "Service Attachment for Managed Compliance Services",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "service:compliance",
+      "page_url": "https://legal.theboomcoinc.com/service-attachment-compliance-services/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Service-Attachment-Compliance-Services-2026-11-02.pdf",
+      "sha256": "453912c82380d50ed408373aa06c7b896b0beb117697d30b2c0f6299cf769cbd"
+    },
+    {
+      "title": "Service Attachment for BoomTalk™ Live",
+      "effective": "2026-11-02",
+      "effective_display": "November 2, 2026",
+      "applies": "service:boomtalk-live",
+      "page_url": "https://legal.theboomcoinc.com/service-attachment-boomtalk-live/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-Service-Attachment-BoomTalk-Live-2026-11-02.pdf",
+      "sha256": "462197e7e2c8b980a62deb78d859e01231855fa84ff63ad79a7d916de2ecfe76"
+    },
+    {
+      "title": "BoomTalk™ VoIP Terms of Service",
+      "effective": "2026-09-22",
+      "effective_display": "September 22, 2026",
+      "applies": "service:boomtalk-voip",
+      "page_url": "https://legal.theboomcoinc.com/terms-of-service/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-BoomTalk-VoIP-Terms-of-Service-2026-09-22.pdf",
+      "sha256": "473f970f5ec95a517b03d0336fba4167c27d3cef62d556674c0903ffa7fcd0a2"
+    },
+    {
+      "title": "911/E911 Notification and Disclosures",
+      "effective": "2026-09-22",
+      "effective_display": "September 22, 2026",
+      "applies": "service:boomtalk-voip",
+      "page_url": "https://legal.theboomcoinc.com/e911/",
+      "pdf_url": "https://legal.theboomcoinc.com/pdf/Boom-Logic-911-E911-Notification-Disclosures-2026-09-22.pdf",
+      "sha256": "1d842043478867ba7ab704bc0f79c9b78bf8f0936ce60cbc872739fbec431bbe"
+    }
+  ]
+}
